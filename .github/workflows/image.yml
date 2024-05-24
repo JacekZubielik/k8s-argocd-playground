@@ -44,7 +44,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/jacekzubielik/node-app
+            ghcr.io/jacekzubielik/todo ./todo
           tags: |
             type=semver,pattern={{version}}
             type=ref,event=branch
